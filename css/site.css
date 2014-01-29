@@ -3,6 +3,7 @@
  */
 
 .index-body {
+	padding-top: 70px;
 	background-color: rgba(217, 217, 220, 0.4);
 }
 
@@ -11,11 +12,14 @@ footer {
 	padding-top: 15px;
 	padding-left: 15px;
 	padding-right: 15px;
-	background-color: rgba(215, 215, 230, 0.2);
 }
 
 .gist {
     padding-left: 1em;
     padding-right: 2em;
     font-size: 0.8em;
+}
+
+.navbar-static-top {
+  margin-bottom: 19px;
 }
