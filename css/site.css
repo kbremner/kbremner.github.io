@@ -2,22 +2,17 @@
  * Some custom css
  */
 
- .btn-ttc,
- .btn-ttc:hover,
- .btn-ttc:active {
- 	color:white;
- 	text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
- 	background-color: #007da7;
- }
+.index-body {
+	background-color: rgba(217, 217, 220, 0.4);
+}
 
- .btn-ttc {
- 	background-repeat: repeat-x;
- 	
- }
-
- .btn-ttc:hover {
- 	background-position: 0 -15px;
- }
+footer {
+	margin: 10px;
+	padding-top: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+	background-color: rgba(215, 215, 230, 0.2);
+}
 
 .gist {
     padding-left: 1em;
