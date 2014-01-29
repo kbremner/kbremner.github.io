@@ -59,7 +59,11 @@
 	<div class="dropdown">
       <a data-toggle="dropdown" href="#">Dropdown trigger</a>
       <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-        {% insert list_posts.html %}
+          {% for post in site.posts %}
+            <li>
+              <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+          {% endfor %}
       </ul>
     </div>
       
