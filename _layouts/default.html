@@ -48,14 +48,17 @@
     <div class="jumbotron">
       <div class="container">
         <h1>Hello, world!</h1>
-        <p>{{ content }}</p>
+        
         <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
         <p><a class="btn btn-ttc" role="button">Another button &raquo;</a></p>
       </div>
     </div>
 
+    <div><p>{{ content }}</p></div>
+
       <footer>
         <p>&copy; Company 2013</p>
+        <p>Generated at {{ site.time | data_to_xmlschema }}</p>
       </footer>
 
 
