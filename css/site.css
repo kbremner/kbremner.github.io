@@ -17,3 +17,9 @@
  .btn-ttc:hover {
  	background-position: 0 -15px;
  }
+
+.gist {
+    padding-left: 1em;
+    padding-right: 2em;
+    font-size: 0.75em;
+}
