@@ -1,6 +1,8 @@
 ---
 layout: default
+published: true
 ---
+
 <h2>{{ page.title }}</h2>
 <p class="meta">{{ page.date | date_to_string }}</p>
 
@@ -13,7 +15,7 @@ layout: default
 <div>
     <br>
     <br>
-    <p><b>Tags:</b> {% include get_tags.html tags=page.tags %}</p>
+    <p><b>Tags:</b> {{ page.tags | array_to_sentence_string }}</p>
 </div>
 
 <script type="text/javascript">
@@ -43,4 +45,3 @@ var disqus_shortname = 'kbremner-github'; // required: replace example with your
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-
