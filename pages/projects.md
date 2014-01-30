@@ -1,5 +1,7 @@
 ---
 layout: default
-title: Projects - Kyle Bremner | Software Engineer
+title: "Projects - Kyle Bremner | Software Engineer"
+published: true
 ---
-To fill...
+
+[Viewtils](/Viewtils/)
