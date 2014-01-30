@@ -3,6 +3,7 @@
  */
 
 .index-body {
+	position: relative;
 	padding-top: 70px;
 	padding-left: 1em;
 	padding-right: 1em;
@@ -15,7 +16,7 @@
 }
 
 .gist {
-    font-size: 0.8em;
+    font-size: 0.85em;
 }
 
 
