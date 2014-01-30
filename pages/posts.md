@@ -5,5 +5,4 @@ published: true
 ---
 
 Posts:
-
-{{ site.posts | array_to_sentence_string }}
+{% include list_posts.html %}
