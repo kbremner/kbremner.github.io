@@ -6,4 +6,7 @@ published: true
 
 Posts:
 
-{% include list_posts.html %}
+{% for post in site.posts %}
+* {{ post.title }}
+* {{ post.excerpt }}
+{% endfor %}
