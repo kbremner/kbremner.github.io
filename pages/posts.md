@@ -5,4 +5,5 @@ published: true
 ---
 
 Posts:
+
 {% include list_posts.html %}
