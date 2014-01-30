@@ -4,22 +4,21 @@
 
 .index-body {
 	padding-top: 70px;
+	padding-left: 1em;
+	padding-right: 1em;
 	background-color: rgba(217, 217, 220, 0.4);
 }
 
-footer {
-	margin: 10px;
-	padding-top: 15px;
-	padding-left: 15px;
-	padding-right: 15px;
+.footer {
+	padding-right: 1em;
+	padding-left: 1em;
 }
 
 .gist {
-    padding-left: 1em;
-    padding-right: 2em;
     font-size: 0.8em;
 }
 
-.navbar-static-top {
-  margin-bottom: 19px;
+
+.social {
+	padding-right: 1em;
 }

@@ -4,10 +4,32 @@ title: Kyle Bremner | Software Engineer
 ---
 Hello World! Here's some text...
 
-Posts:
-
-{% include list_posts.html %}
-
 Example Gist:
 
 {% gist 7070128 %}
+
+The same as a code import:
+
+```java
+package com.deftech.spotify;
+ 
+import android.content.Context;
+
+public class HelloSpotify {
+	private final String cacheDir;
+	static {
+		System.loadLibrary("hello_spotify");
+	}
+	
+	public HelloSpotify(Context context){
+		cacheDir = context.getCacheDir().getAbsolutePath();
+	}
+ 
+	public int login(String username, String password){
+		return login(username, password, cacheDir);
+	}
+	
+	public native String getBuildID();
+	private native int login(String username, String password, String cacheDir);
+}
+```
