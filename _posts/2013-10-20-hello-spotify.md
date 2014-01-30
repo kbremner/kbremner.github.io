@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Hello Spotify
-date: {}
 tags: libspotify android ndk java c
 published: true
 ---
