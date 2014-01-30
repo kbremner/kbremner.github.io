@@ -8,5 +8,5 @@ Posts:
 
 {% for post in site.posts %}
 * {{ post.title }}
-_{{ post.excerpt }}_
+<em>{{ post.excerpt }}</em>
 {% endfor %}
