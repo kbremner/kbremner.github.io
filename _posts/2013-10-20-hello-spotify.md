@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Hello Spotify"
-date:   2013-10-20 11:31:00
+title: Hello Spotify
+date: {}
 tags: libspotify android ndk java c
+published: true
 ---
 
 Recently I got round to having a look at Spotify's developer library, [libspotify](https://developer.spotify.com/technologies/libspotify/), to try and figure out how to use it within Android apps. As part of this, I decided to create a "Hello Spotify" example project that might be useful to others looking to use the library.
