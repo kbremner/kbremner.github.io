@@ -10,9 +10,6 @@ Example Gist:
 
 {% gist 7070128 %}
 
-The same using gist-embed script:
-<code data-gist-id="7070128" data-gist-hide-footer="true" data-gist-hide-line-numbers="true" data-gist-highlight="1,3,5"></code>
-
 The same as a code import:
 
 ```java
