@@ -13,4 +13,4 @@ published: true
 {% endif %}
 </div>
 {% endfor %}
-<meta http-equiv="refresh" content="0;url={{ https://raw.github.com/kbremner/Viewtils/master/README.md }}">
+<meta content="0;url={{ https://raw.github.com/kbremner/Viewtils/master/README.md }}">
