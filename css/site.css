@@ -43,3 +43,5 @@ a {
 .title-row {
 	background-color: white;
 }
+
+.sidenav.sticky { float: none; position: fixed; }
