@@ -8,19 +8,28 @@ published: true
 
 <div class="container-fluid">
     <div class="row">
+        {% if page.sections.size > 0 %}
         <div class="col-md-2 visible-md visible-lg">
-        <div class="sidenav affix-top" data-spy="affix" data-offset-bottom="400" data-offset-top="55">
+        <aside class="sidenav affix-top">
             <ul class="nav nav-pills nav-stacked">
               {% for section in page.sections %}
                 <li><a href="#{{ section }}">{{ section }}</a></li>
               {% endfor %}
             </ul>
-        </div>
+        </aside>
         </div>
         <div class="col-md-10">
-            <div class="post" id="Introduction" data-spy="scroll" data-target=".nav-pills" data-offset="0">{{ content }}</div>
+            <div class="post" data-spy="scroll" data-target=".nav-pills" data-offset="0">{{ content }}</div>
             <p><b>Tags:</b> {{ page.tags | array_to_sentence_string }}</p>
         </div>
+        {% else %}
+        <div class="col-md-12">
+            <div class="post">{{ content }}</div>
+            {% if page.tags.size > 0 %}
+            <p><b>Tags:</b> {{ page.tags | array_to_sentence_string }}</p>
+            {% endif %}
+        </div>
+        {% endif %}
     </div>
 </div>
 
@@ -53,3 +62,16 @@ published: true
     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 </div>
+
+<script>
+$(document).ready(function() {
+    $('.sidenav').stickySidebar({
+        sidebarTopMargin: 55,
+        footerThreshold: 400,
+        navSelector: ".navbar-fixed-top",
+        footerSelector: ".footer",
+        contentSelector: ".post"
+    });
+
+});
+</script>

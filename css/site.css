@@ -44,11 +44,4 @@ a {
 	background-color: white;
 }
 
-.sidenav.affix {
-	top: 55px;
-}
-
-.sidenav.affix-bottom {
-	position: absolute;
-	bottom: 400px;
-}
+.sidenav.sticky { float: none; position: fixed; top: 20px; z-index: 6; left: auto; }
