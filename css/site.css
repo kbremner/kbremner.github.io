@@ -2,6 +2,14 @@
  * Some custom css
  */
 
+body {
+	position: relative;
+}
+
+a {
+	text-decoration: none;
+}
+
 .index-body {
 	position: relative;
 	padding-top: 70px;
@@ -22,4 +30,25 @@
 
 .social {
 	padding-right: 1em;
+}
+
+.scrollspy {
+	overflow-y: scroll;
+}
+
+.post-title a {
+	color: white;
+}
+
+.title-row {
+	background-color: white;
+}
+
+.sidenav.affix {
+	top: 55px;
+}
+
+.sidenav.affix-bottom {
+	position: absolute;
+	bottom: 400px;
 }

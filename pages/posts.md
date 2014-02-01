@@ -4,8 +4,12 @@ title: "Posts - Kyle Bremner | Software Engineer"
 published: true
 ---
 
-Posts:
 {% for post in site.posts %}
-* [{{ post.title }}]({{ post.url }}) ({{ post.date | date_to_long_string }})
-<em>{{ post.excerpt }}</em>
+<div class="panel panel-primary">
+<div class="panel-heading post-title"><a href="{{ post.url }}" style="text-decoration:none;">{{ post.title }}</a> <small>({{ post.date | date_to_long_string }})</small></div>
+<div class="panel-body"><em>{{ post.excerpt }}</em></div>
+{% if post.tags.size > 0 %}
+<div class="panel-footer">{{ post.tags | array_to_sentence_string }}</div>
+{% endif %}
+</div>
 {% endfor %}

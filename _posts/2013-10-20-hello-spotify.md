@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Hello Spotify
+sections: [Setting Up, JNI Example, C Code, Java Code, Summary, References]
 tags: libspotify android ndk java c
 published: true
 ---
@@ -15,6 +16,7 @@ I have created a simple example library project that is available on GitHub here
 
 Below is a description of the different components of the project and the steps I followed to make it.
 
+<div id="Setting Up"></div>
 ##Setting Up
 ####Get libspotify
 
@@ -39,6 +41,7 @@ The Android build tool uses this makefile to compile the modules before putting 
 
 Now we have everything we need to start writing the actual code!
 
+<div id="JNI Example"></div>
 ##JNI Example
 
 In a project like this where we are creating a bridge between C code and Java code, there needs to be some "glue". This glue is written as C methods that are then referenced in the Java code. For the Java compiler to find the native methods, the C method names have to comply to a strict naming convention. This is best explained by example.
@@ -57,6 +60,7 @@ It is best not to try and write the C header yourself. The Java tool javah can c
 
 There is an alternative, which is to use JNI_OnLoad to register the native methods, but that's beyond the scope of this article. For more details about this approach, see [here](http://sbcgamesdev.blogspot.co.uk/2012/12/using-jnionload-in-adroid-ndk.html).
 
+<div id="C Code"></div>
 ##C Code
 ####Writing it
 
@@ -97,6 +101,7 @@ Note that the approach for the login method is naive in a number of ways:
 
 The NDK code has to be compiled from the command line. Navigate to the root of the project and simply run ndk-build. This will compile the code, outputting any build errors. I found it was best to clean the project in eclipse first, run ndk-build, then refresh the eclipse project.
 
+<div id="Java Code"></div>
 ##Java Code
 
 Now that we've written and compiled our C code, the next step is the Java class to wrap the native code, HelloSpotify:
@@ -105,12 +110,14 @@ Now that we've written and compiled our C code, the next step is the Java class 
 
 This class is quite simple, as most of the logic of mapping the C methods to the Java methods has already been done. The important bit is the static call to load the library name specified in Android.mk. But that's it for the Java code!
 
+<div id="Summary"></div>
 ##Summary
 
 This example project can be cloned from GitHub and (after putting in your appkey.c) used as a library project by other Android projects. It provides a simple look at how to use a native library by writing the JNI glue to call it from a Java class.
 
 Any comments/queries, just drop a comment below!
 
+<div id="References"></div>
 ##References
 
 * [libspotify examples](https://developer.spotify.com/docs/libspotify/12.1.45/examples.html)
