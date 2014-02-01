@@ -1,0 +1,8 @@
+{% capture mod %}{{ include.num | modulo:10 }}{% endcapture %}
+
+{% case mod %}
+{% when '1' %}{{ include.num }}st
+{% when '2' %}{{ include.num }}nd
+{% when '3' %}{{ include.num }}rd
+{% else %}{{ include.num }}th
+{% endcase %}
