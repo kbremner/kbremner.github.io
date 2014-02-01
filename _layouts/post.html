@@ -2,8 +2,11 @@
 layout: default
 published: true
 ---
-<div class="well well-sm">
+<div class="well well-sm hidden-xs">
     <h1>{{ page.title }} <small>{% include format_date.html time=page.date %}</small></h1>
+</div>
+<div class="well well-sm visible-xs">
+    <h1>{{ page.title }}<br><small>{% include format_date.html time=page.date %}</small></h1>
 </div>
 
 <div class="container-fluid">
