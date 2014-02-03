@@ -22,7 +22,7 @@ I have created a simple example library project that is available on GitHub here
 
 Below is a description of the different components of the project and the steps I followed to make it.
 
-<a id="Setting Up"></a>
+<a class="anchor-header" id="Setting Up"></a>
 ##Setting Up
 ####Get libspotify
 
