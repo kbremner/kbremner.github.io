@@ -11,7 +11,7 @@ published: true
     <div class="row">
         {% if page.sections.size > 0 %}
         <div class="col-md-2 visible-md visible-lg">
-        <aside class="sidenav affix-top">
+        <aside class="sidenav">
             <ul class="nav nav-pills nav-stacked">
               {% for section in page.sections %}
                 <li><a href="#{{ section }}">{{ section }}</a></li>
@@ -21,13 +21,15 @@ published: true
         </div>
         <div class="col-md-10">
             <div class="post" data-spy="scroll" data-target=".nav-pills" data-offset="0">{{ content }}</div>
-            <p><b>Tags:</b> {{ page.tags | array_to_sentence_string }}</p>
+            {% if page.tags.size > 0 %}
+          		<p><b>Tags:</b> {{ page.tags | array_to_sentence_string }}</p>
+          	{% endif %}
         </div>
         {% else %}
         <div class="col-md-12">
             <div class="post">{{ content }}</div>
             {% if page.tags.size > 0 %}
-            <p><b>Tags:</b> {{ page.tags | array_to_sentence_string }}</p>
+            	<p><b>Tags:</b> {{ page.tags | array_to_sentence_string }}</p>
             {% endif %}
         </div>
         {% endif %}
