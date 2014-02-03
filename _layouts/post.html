@@ -11,7 +11,7 @@ published: true
     <div class="row">
         {% if page.sections.size > 0 %}
         <div class="col-md-2 visible-md visible-lg">
-          <aside class="sidenav" style="width: inherited;">
+          <aside class="sidenav">
             <ul class="nav nav-pills nav-stacked">
               {% for section in page.sections %}
                 <li class="active"><a href="#{{ section }}">{{ section }}</a></li>
