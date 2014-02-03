@@ -47,7 +47,7 @@ The Android build tool uses this makefile to compile the modules before putting 
 
 Now we have everything we need to start writing the actual code!
 
-<a id="JNI Example" style="top: -55px;"></a>
+<a id="JNI Example"></a>
 ##JNI Example
 
 In a project like this where we are creating a bridge between C code and Java code, there needs to be some "glue". This glue is written as C methods that are then referenced in the Java code. For the Java compiler to find the native methods, the C method names have to comply to a strict naming convention. This is best explained by example.
