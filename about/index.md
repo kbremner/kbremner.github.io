@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "About Me - Kyle Bremner | Software Engineer"
+title: "About - Kyle Bremner | Software Engineer"
 published: true
 ---
 
