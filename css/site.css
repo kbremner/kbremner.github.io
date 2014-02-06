@@ -6,10 +6,6 @@ body {
 	position: relative;
 }
 
-a {
-	text-decoration: none;
-}
-
 .index-body {
 	position: relative;
 	padding-top: 70px;
@@ -48,11 +44,7 @@ a {
 	position: fixed;
 }
 
-.jumbotron a {
-  text-decoration: none;
-}
-
-.jumbotron {
+.welcome-msg {
   background-color: #EFF;
   border-radius: 5px;
 }
