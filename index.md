@@ -6,6 +6,6 @@ published: true
 
 <div class="jumbotron" style="background-color: #EFF; border-radius: 5px;">
   <h1>Welcome! :)</h1>
-  <p>...</p>
-  <p><a class="btn btn-primary btn-lg" role="button" href="/about">About me</a></p>
+  <p>This site holds information <a href="/about">about me</a> and my <a href="/projects">projects</a>, as well as <a href="/posts">my ramblings</a> about software engineering and Android, with a sprinkling of electronics.</p>
+  <p><a class="btn btn-primary btn-lg" role="button" href="/about">Find out more</a></p>
 </div>
