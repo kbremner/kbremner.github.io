@@ -6,6 +6,10 @@ body {
 	position: relative;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 .index-body {
 	position: relative;
 	padding-top: 70px;
