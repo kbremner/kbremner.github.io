@@ -47,3 +47,8 @@ a:hover {
 .sidenav.sticky {
 	position: fixed;
 }
+
+.jumbotron {
+  background-color: #EFF;
+  border-radius: 5px;
+}
