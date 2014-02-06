@@ -43,14 +43,3 @@ body {
 .sidenav.sticky {
 	position: fixed;
 }
-
-.welcome-msg {
-  	padding: 30px;
-	margin-bottom: 30px;
-	font-size: 21px;
-	font-weight: 200;
-	line-height: 2.1428571435;
-	color: inherit;
-  	background-color: #EFF;
-  	border-radius: 5px;
-}
