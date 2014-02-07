@@ -57,3 +57,10 @@ a:hover {
 	padding-top: 55px;
   	margin-top: -55px;
 }
+
+.welcome-section {
+	padding-right: 1em;
+	padding-left: 1em;
+	background-color: #EFF;
+	border-radius: 5px;  
+}
