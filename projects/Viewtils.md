@@ -4,10 +4,11 @@ title: "Projects - Kyle Bremner | Software Engineer"
 published: true
 ---
 
-<div class="jumbotron" style="padding: 20px;">
-<h1>Viewtils
+<div class="project-jumbotron jumbotron">
+<h1>Viewtils</h1>
 <br class="visible-xs">
-<a href="https://travis-ci.org/kbremner/Viewtils"><img src="https://travis-ci.org/kbremner/Viewtils.png"></a><a href="https://coveralls.io/r/kbremner/Viewtils?branch=master"><img src="https://coveralls.io/repos/kbremner/Viewtils/badge.png?branch=master"></a></h1>
+<a href="https://travis-ci.org/kbremner/Viewtils"><img src="https://travis-ci.org/kbremner/Viewtils.png"></a>
+<a href="https://coveralls.io/r/kbremner/Viewtils?branch=master"><img src="https://coveralls.io/repos/kbremner/Viewtils/badge.png?branch=master"></a>
 </div>
 
 =========
