@@ -5,9 +5,7 @@ published: true
 ---
 
 <div class="well well-sm">
-<h1>Viewtils</h1>
-<br class="visible-xs">
-<small>Helping tests to interact with the UI of an Android application</small>
+<h1>Viewtils <br class="visible-xs"><small>Helping tests to interact with the UI of an Android application</small></h1>
 </div>
 <a href="https://travis-ci.org/kbremner/Viewtils"><img src="https://travis-ci.org/kbremner/Viewtils.png"></a>
 <a href="https://coveralls.io/r/kbremner/Viewtils?branch=master"><img src="https://coveralls.io/repos/kbremner/Viewtils/badge.png?branch=master"></a>
