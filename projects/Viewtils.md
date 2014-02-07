@@ -6,8 +6,6 @@ published: true
 
 <div class="well well-sm">
 <h1>Viewtils <br class="visible-xs"><small>Help to seach an Andriod application's UI</small></h1>
-</div>
-<div class="well well-sm">
 <a href="https://coveralls.io/r/kbremner/Viewtils?branch=master"><img src="https://coveralls.io/repos/kbremner/Viewtils/badge.png?branch=master"></a> <a href="https://travis-ci.org/kbremner/Viewtils"><img src="https://travis-ci.org/kbremner/Viewtils.png"></a>
 </div>
 Viewtils is a library to aide in finding UI elements that meet one or more `Requirement`s, a task that is common when constructing unit tests for an application.
