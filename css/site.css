@@ -64,3 +64,8 @@ a:hover {
 	background-color: #EFF;
 	border-radius: 5px;  
 }
+
+.project-jumbotron {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}  
