@@ -10,6 +10,14 @@ a:hover {
   text-decoration: none;
 }
 
+.post-link {
+  color: #EEF;
+}
+
+.post-link:hover {
+  color: #FFF;  
+}
+
 .index-body {
 	position: relative;
 	padding-top: 70px;
