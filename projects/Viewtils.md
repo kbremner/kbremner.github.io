@@ -8,7 +8,7 @@ published: true
 <h1>Viewtils</h1>
 <br class="visible-xs">
 <small>
-[![Build Status](https://travis-ci.org/kbremner/Viewtils.png)](https://travis-ci.org/kbremner/Viewtils) [![Coverage Status](https://coveralls.io/repos/kbremner/Viewtils/badge.png?branch=master)](https://coveralls.io/r/kbremner/Viewtils?branch=master)
+<a href="https://travis-ci.org/kbremner/Viewtils"><img src="https://travis-ci.org/kbremner/Viewtils.png"> <a href="https://coveralls.io/r/kbremner/Viewtils?branch=master"><img src="https://coveralls.io/repos/kbremner/Viewtils/badge.png?branch=master"></a>
 </small>
 </div>
 
