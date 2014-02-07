@@ -7,11 +7,10 @@ published: true
 <div class="project-jumbotron jumbotron">
 <h1>Viewtils</h1>
 <br class="visible-xs">
+<small>Helping tests to interact with the UI of an Android application<small>
+</div>
 <a href="https://travis-ci.org/kbremner/Viewtils"><img src="https://travis-ci.org/kbremner/Viewtils.png"></a>
 <a href="https://coveralls.io/r/kbremner/Viewtils?branch=master"><img src="https://coveralls.io/repos/kbremner/Viewtils/badge.png?branch=master"></a>
-</div>
-
-=========
 
 Viewtils is a library to aide in carrying out tasks that are common when interacting with the UI of an application.
 
