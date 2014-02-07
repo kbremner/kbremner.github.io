@@ -22,8 +22,7 @@ I have created a simple example library project that is available on GitHub here
 
 Below is a description of the different components of the project and the steps I followed to make it.
 
-<a class="anchor-header" id="Setting Up"></a>
-##Setting Up
+<h2 class="anchor-header" id="Setting Up">Setting Up</h2>
 ####Get libspotify
 
 The first task is to download the Android version of libspotify from the libspotify homepage. The required file for compiling is in the lib directory of the download. Take the largest file and remove the numbers after .so (this is version information that isn't supported by Android). Also in the download is the header file that will be needed later, under include/libspotify/api.h. Within the Hello Spotify example project, the .so file can be found under jni/libspotify, and the header under jni/headers.
@@ -47,8 +46,7 @@ The Android build tool uses this makefile to compile the modules before putting 
 
 Now we have everything we need to start writing the actual code!
 
-<a id="JNI Example"></a>
-##JNI Example
+<h2 class="anchor-header" id="JNI Example">JNI Example</h2>
 
 In a project like this where we are creating a bridge between C code and Java code, there needs to be some "glue". This glue is written as C methods that are then referenced in the Java code. For the Java compiler to find the native methods, the C method names have to comply to a strict naming convention. This is best explained by example.
 
@@ -66,8 +64,7 @@ It is best not to try and write the C header yourself. The Java tool javah can c
 
 There is an alternative, which is to use JNI_OnLoad to register the native methods, but that's beyond the scope of this article. For more details about this approach, see [here](http://sbcgamesdev.blogspot.co.uk/2012/12/using-jnionload-in-adroid-ndk.html).
 
-<a id="C Code"></a>
-##C Code
+<h2 class="anchor-header" id="C Code">C Code</h2>
 ####Writing it
 
 The Hello Spotify project just has 3 C files:
@@ -107,8 +104,7 @@ Note that the approach for the login method is naive in a number of ways:
 
 The NDK code has to be compiled from the command line. Navigate to the root of the project and simply run ndk-build. This will compile the code, outputting any build errors. I found it was best to clean the project in eclipse first, run ndk-build, then refresh the eclipse project.
 
-<a id="Java Code"></a>
-##Java Code
+<h2 class="anchor-header" id="Java Code">Java Code</h2>
 
 Now that we've written and compiled our C code, the next step is the Java class to wrap the native code, HelloSpotify:
 
@@ -116,15 +112,13 @@ Now that we've written and compiled our C code, the next step is the Java class 
 
 This class is quite simple, as most of the logic of mapping the C methods to the Java methods has already been done. The important bit is the static call to load the library name specified in Android.mk. But that's it for the Java code!
 
-<a id="Summary"></a>
-##Summary
+<h2 class="anchor-header" id="Summary">Summary</h2>
 
 This example project can be cloned from GitHub and (after putting in your appkey.c) used as a library project by other Android projects. It provides a simple look at how to use a native library by writing the JNI glue to call it from a Java class.
 
 Any comments/queries, just drop a comment below!
 
-<a id="References"></a>
-##References
+<h2 class="anchor-header" id="References">References</h2>
 
 * [libspotify examples](https://developer.spotify.com/docs/libspotify/12.1.45/examples.html)
 * [GitHub: spotify/psyonspotify](https://github.com/spotify/psyonspotify)
