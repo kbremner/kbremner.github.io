@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Projects - Kyle Bremner | Software Engineer"
+title: "Viewtils - Kyle Bremner | Software Engineer"
 published: true
 ---
 
