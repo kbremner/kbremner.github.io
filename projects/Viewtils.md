@@ -4,7 +4,7 @@ title: "Projects - Kyle Bremner | Software Engineer"
 published: true
 ---
 
-<div class="well well-sm">
+<div class="jumbotron">
 <h1>Viewtils</h1>
 <br class="visible-xs">
 <small>
