@@ -7,7 +7,7 @@ published: true
 <div class="welcome-section">
 <h1>Viewtils
 <br class="visible-xs">
-<a href="https://travis-ci.org/kbremner/Viewtils"><img src="https://travis-ci.org/kbremner/Viewtils.png"> <a href="https://coveralls.io/r/kbremner/Viewtils?branch=master"><img src="https://coveralls.io/repos/kbremner/Viewtils/badge.png?branch=master"></a></h1>
+<a href="https://travis-ci.org/kbremner/Viewtils"><img src="https://travis-ci.org/kbremner/Viewtils.png"></a><a href="https://coveralls.io/r/kbremner/Viewtils?branch=master"><img src="https://coveralls.io/repos/kbremner/Viewtils/badge.png?branch=master"></a></h1>
 </div>
 
 =========
