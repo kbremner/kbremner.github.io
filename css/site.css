@@ -52,3 +52,8 @@ a:hover {
   	background-color: #EFF;
   	border-radius: 5px;
 }
+
+.anchor-header {
+	padding-top: 55px;
+  	margin-top: -55px;
+}
