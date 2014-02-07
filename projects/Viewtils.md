@@ -5,11 +5,9 @@ published: true
 ---
 
 <div class="jumbotron">
-<h1>Viewtils</h1>
+<h1>Viewtils
 <br class="visible-xs">
-<small>
-<a href="https://travis-ci.org/kbremner/Viewtils"><img src="https://travis-ci.org/kbremner/Viewtils.png"> <a href="https://coveralls.io/r/kbremner/Viewtils?branch=master"><img src="https://coveralls.io/repos/kbremner/Viewtils/badge.png?branch=master"></a>
-</small>
+<a href="https://travis-ci.org/kbremner/Viewtils"><img src="https://travis-ci.org/kbremner/Viewtils.png"> <a href="https://coveralls.io/r/kbremner/Viewtils?branch=master"><img src="https://coveralls.io/repos/kbremner/Viewtils/badge.png?branch=master"></a></h1>
 </div>
 
 =========
