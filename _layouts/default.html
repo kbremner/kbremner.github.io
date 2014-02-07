@@ -67,7 +67,7 @@
           <p class="nav small navbar-text navbar-right">Hosted by <a href="http://pages.github.com/" target="_blank"><img src="/images/github-pages.png" height="12px" alt="GitHub Pages"></a>
           <p class="nav small navbar-text navbar-right">
             {% capture day %}{{ site.time | date: "%-d" }}{% endcapture %}
-            Generated from <a href="https://github.com/kbremner/kbremner.github.io/blob/master/{{ page.path }}" target="_blank">source</a> by <a href="http://jekyllrb.com/" target="_blank">Jekyll (version {{ jekyll.version }})</a> at {{ site.time | date: "%X (%z)" }} on {% include format_date.html time=site.time %}
+            Generated from <a href="https://github.com/kbremner/kbremner.github.io/blob/master/{{ page.path }}" target="_blank">source</a> by <a href="http://jekyllrb.com/" target="_blank">Jekyll (version {{ jekyll.version }})</a> at {{ site.time | date: "%X (%Z)" }} on {% include format_date.html time=site.time %}
           </p>
           </p>
       </footer>
