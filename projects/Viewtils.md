@@ -23,8 +23,9 @@ API Examples
 ----
 
 - Find a `View` based on ID:
-
-{% gist 8884784 findById.java %}
+<div>
+<code data-gist-id="8884784" data-gist-file="findById.java" data-gist-hide-footer="true" data-gist-hide-line-numbers="true"></code>
+</div>
 
 - Find a `TextView` based on a regex:
 
