@@ -10,9 +10,7 @@ coveralls: "https://coveralls.io/r/kbremner/Viewtils?branch=master"
 "coveralls-badge": "https://coveralls.io/repos/kbremner/Viewtils/badge.png?branch=master"
 ---
 
-Viewtils is a library to aide in finding UI elements that meet one or more `Requirement`s, a task that is common when constructing unit tests for an application.
-
-It aims to not be reliant on instances of classes only accessable under test (i.e. `Instrumention`). This means that the library can easily be used with other testing frameworks, or be used within an application.
+Viewtils is a library to aide in finding UI elements that meet one or more `Requirement`s, a task that is common when constructing unit tests for an application. It aims to not be reliant on instances of classes only accessable under test (i.e. `Instrumention`). This means that the library can easily be used with other testing frameworks, or be used within an application.
 
 Influences
 ----
