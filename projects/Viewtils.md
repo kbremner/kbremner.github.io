@@ -23,6 +23,7 @@ API Examples
 ----
 
 - Find a `View` based on ID:
+
 <div>
 <code data-gist-id="8884784" data-gist-file="findById.java" data-gist-hide-footer="true" data-gist-hide-line-numbers="true"></code>
 </div>
