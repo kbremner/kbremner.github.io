@@ -23,10 +23,7 @@ API Examples
 ----
 
 - Find a `View` based on ID:
-
-```java
-View view = with(activity).find(View.class).where(idIs(R.id.textView1));
-```
+{% gist 8884784 findById.java %}
 
 - Find a `TextView` based on a regex:
 
