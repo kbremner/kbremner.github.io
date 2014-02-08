@@ -5,7 +5,9 @@ published: true
 ---
 
 <div class="panel panel-header">
+<div class="panel-body">
 <h1><a href="https://github.com/kbremner/Viewtils" target="_blank">Viewtils</a> <br class="visible-xs"><small>Help to seach an Andriod application's UI</small></h1>
+</div>
 <div class="panel-footer">
 <a href="https://travis-ci.org/kbremner/Viewtils" target="_blank"><img class="build-info-tag" src="https://travis-ci.org/kbremner/Viewtils.png"></a> <a href="https://coveralls.io/r/kbremner/Viewtils?branch=master" target="_blank"><img class="build-info-tag" src="https://coveralls.io/repos/kbremner/Viewtils/badge.png?branch=master"></a>
 </div>
