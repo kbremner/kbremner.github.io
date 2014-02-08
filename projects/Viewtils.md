@@ -1,7 +1,13 @@
 ---
-layout: default
+layout: project
 title: "Viewtils - Kyle Bremner | Software Engineer"
 published: true
+name: Viewtils
+github: "https://github.com/kbremner/Viewtils"
+tagline: "Help to seach an Andriod application's UI"
+travis: "https://travis-ci.org/kbremner/Viewtils"
+coveralls: "https://coveralls.io/r/kbremner/Viewtils?branch=master"
+"coveralls-badge": "https://coveralls.io/repos/kbremner/Viewtils/badge.png?branch=master"
 ---
 
 <div class="project-title panel panel-default"><div class="panel-body"><h1><a href="https://github.com/kbremner/Viewtils" target="_blank">Viewtils</a> <br class="visible-xs"><small>Help to seach an Andriod application's UI</small></h1>
