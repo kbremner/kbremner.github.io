@@ -4,7 +4,7 @@ title: "Viewtils - Kyle Bremner | Software Engineer"
 published: true
 ---
 
-<div class="panel panel-header">
+<div class="panel panel-default">
 <div class="panel-body">
 <h1><a href="https://github.com/kbremner/Viewtils" target="_blank">Viewtils</a> <br class="visible-xs"><small>Help to seach an Andriod application's UI</small></h1>
 </div>
