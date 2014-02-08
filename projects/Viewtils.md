@@ -23,77 +23,36 @@ API Examples
 ----
 
 - Find a `View` based on ID:
+
 {% gist 8884784 findById.java %}
 
 - Find a `TextView` based on a regex:
 
-```java
-Button button = with(viewGroup).find(Button.class).where(textMatches("Click.*");
-```
+{% gist 8884784 findByRegex.java %}
 
 - Search using multiple requirements:
 
-```java
-List<Requirement<? super TextView>> reqs = new ArrayList<Requirement<? super TextView>>();
-reqs.add(textIs(R.string.some_msg));
-reqs.add(idIs(R.id.textView));
-
-// Get a text view that matches *all* provided requirements
-TextView result = with(activity).find(TextView.class).where(matchesAll(reqs));      
-
-// Get a text view that matches *any* provided requirements
-TextView result = with(activity).find(TextView.class).where(matchesAny(reqs));
-
-// Alternatively... (Note that your editor will complain about the use of generics with varargs)
-TextView result = with(activity).find(TextView.class)
-                    .where(matchesAll(idIs(R.id.textView), textIs(R.string.some_msg)));
-```
+{% gist 8884784 multipleReqs.java %}
 
 - Find multiple matches & invert a `Requirement`:
 
-```java
-List<Button> result = with(activity).find(Button.class).allWhere(not(textIs(R.string.some_msg)));
-```
+{% gist 8884784 findMultipleInvert.java %}
 
 - Search based on a custom `Requirement`:
 
-```java
-TextView view = with(activity).find(TextView.class).where(new Requirement<View>() {
-    @Override public boolean isMatch(View instance) {
-        return instance.getVisibility() == View.VISIBLE;
-    }
-});
-```
+{% gist 8884784 customReq.java %}
 
 - Click on a view:
 
-```java
-with(activity).click(Button.class).where(textMatches("Click.*"));
-```
+{% gist 8884784 click.java %}
 
 - Select an item in a spinner:
 
-```java
-// Select the item after getting the spinner
-TextView spinnerItem = with(spinner).click(TextView.class).where(textIs("Item 3"));
-
-// Or find it within an activity
-spinnerItem = with(activity).click(TextView.class).where(textIs("Item 2"));
-```
+{% gist 8884784 spinnerClick.java %}
 
 - Carry out a method call on another thread:
 
-```java
-// By default calls are posted to the main looper to be carried out
-execute(textView, "setText")
-    .withParameter("Some text", CharSequence.class)
-    .returningNothing();
-
-CharSequence text = execute(textView, "getText")
-    .withHandler(handler)
-    .in(3, TimeUnit.SECONDS)
-    .returning(CharSequence.class);
-```
+{% gist 8884784 callMethod.java %}
 
 Dependencies
 ---
