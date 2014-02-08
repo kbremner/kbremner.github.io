@@ -72,3 +72,13 @@ a:hover {
 .build-info-tag {
 	height:18px;
 }
+
+.project-title .panel-body {
+	background-color: #EFF;
+}
+
+.project-title .panel-footer {
+  	background-color: #DEE;
+}
+  
+
