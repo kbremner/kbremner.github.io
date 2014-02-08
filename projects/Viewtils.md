@@ -29,7 +29,9 @@ API Examples
 
 - Find a `TextView` based on a regex:
 
-{% gist 8884784 findByRegex.java %}
+<div>
+<code data-gist-id="8884784" data-gist-file="findByRegex.java" data-gist-hide-footer="true" data-gist-hide-line-numbers="true"></code>
+</div>
 
 - Search using multiple requirements:
 
