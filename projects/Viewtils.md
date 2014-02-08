@@ -24,15 +24,11 @@ API Examples
 
 - Find a `View` based on ID:
 
-<div>
-<code data-gist-id="8884784" data-gist-file="findById.java" data-gist-hide-line-numbers="true"></code>
-</div>
+{% gist 8884784 findById.java %}
 
 - Find a `TextView` based on a regex:
 
-<div>
-<code data-gist-id="8884784" data-gist-file="findByRegex.java" data-gist-hide-footer="true" data-gist-hide-line-numbers="true"></code>
-</div>
+{% gist 8884784 findByRegex.java %}
 
 - Search using multiple requirements:
 
