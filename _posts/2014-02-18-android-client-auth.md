@@ -1,6 +1,6 @@
 ---
 layout: post
-post_title: Android and Client Authentication
+title: Android and Client Authentication - Kyle Bremner | Software Engineer
 sections: 
   - System Keystore
   - Getting an Alias
