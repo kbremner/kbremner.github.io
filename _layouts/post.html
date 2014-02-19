@@ -14,13 +14,13 @@ published: true
           <aside class="sidenav">
             <ul class="nav nav-pills nav-stacked">
               {% for section in page.sections %}
-                <li class="active"><a href="#{{ section }}">{{ section }}</a></li>
+                <li><a href="#{{ section }}">{{ section }}</a></li>
               {% endfor %}
             </ul>
         </aside>
         </div>
         <div class="col-md-10">
-            <div class="post" data-spy="scroll" data-target=".nav-pills" data-offset="0">{{ content }}</div>
+            <div class="post">{{ content }}</div>
             {% if page.tags.size > 0 %}
           		<p><b>Tags:</b> {{ page.tags | array_to_sentence_string }}</p>
           	{% endif %}
