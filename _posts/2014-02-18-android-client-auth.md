@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Android and Client Authentication
+post_title: Android and Client Authentication
 sections: 
   - System Keystore
   - Getting an Alias
