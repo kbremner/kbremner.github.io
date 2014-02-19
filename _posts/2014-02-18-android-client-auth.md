@@ -6,11 +6,11 @@ sections:
   - Getting an Alias
   - Using an Alias
   - References
-tags: android client-authentication
+tags: "android client-authentication"
 published: true
 ---
 
-An application I've been developing recently for a client at work had an interesting requirement - to support client authentication using certificates. The process wasn't quite as well documented as I would have expected, so this post aims to help others that need to support client authenication in their application (aimed at Ice Cream Sandwich (ICS) and above).
+Recently I have been developing an application that had to support client authentication using certificates. The process wasn't quite as well documented as I would have expected, so this post aims to help others that need to support client authenication in their application (aimed at Ice Cream Sandwich (ICS) and above).
 
 {% include section_header.html name="System Keystore" %}
 Traditionally, Android applications implemented their own keystores to store sensitive credentials. ICS, however, brought in the ability for applications to access credentials stored in a system keystore when authorised by a user. This not only simplifies the process, but with some devices supporting hardware-backed keystores, it can also be more secure than an application keystore stored in the filesystem.
