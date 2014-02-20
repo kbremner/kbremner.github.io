@@ -13,19 +13,19 @@ published: true
 Recently I have been developing an application that had to support client authentication using certificates. The process wasn't quite as well documented as I would have expected, so this post aims to help others that need to support client authenication in their application (aimed at Ice Cream Sandwich (ICS) and above).
 
 {% include section_header.html name="System Keystore" %}
-Traditionally, Android applications implemented their own keystores to store sensitive credentials. ICS, however, brought in the ability for applications to access credentials stored in a system keystore when authorised by a user. This not only simplifies the process, but with some devices supporting hardware-backed keystores, it can also be more secure than an application keystore stored in the filesystem.
+Traditionally, Android applications created their own keystores for storing sensitive credentials. ICS, however, brought in the ability for applications to access credentials stored in a system keystore when authorised by a user. This not only simplifies the process, but with some devices supporting hardware-backed keystores, it can also be more secure than an application keystore stored in the filesystem.
 
 {% include section_header.html name="Getting an Alias" %}
 Before an application can use credentials stored in the system keystore, the user needs to give the application access to them. The KeyChain API provides a simple means of doing this:
 {% gist kbremner/6206d58ff0b9545de603 getAlias.java %}
-The user will be shown a dialog where they can select an alias currently stored in the system keystore, or install a new certificate. When the user selects a certificate and closes the dialog, the callback will be given an alias for a certificate that it can use. If the user cancels the dialog, the callback will be given a null alias.
+The user will be shown a dialog where they can select a certificate currently stored in the system keystore, or install a new certificate. When the user selects a certificate and closes the dialog, the callback will be given an alias for the selected certificate that it can use to access it. If the user cancels the dialog, the callback will be given a null alias.
 
 <div class="alert alert-warning">
 It is important to note that although the KeyChain API allows an application to provide hints as to which certificate the user should choose, it cannot force the user to select a particular certificate
 </div>
 
 {% include section_header.html name="Using an Alias" %}
-Once an application has an alias, it can be used to get the certificate chain and private key associated with that alias. Below is an example implementation of an X509KeyManager using the certificate chain and private key associated with an alias. This can be used to initialise an SSL context, that can then be set for a URL connection to allow it to support client authentication, as shown below.
+Once an application has an alias for a certificate, it can be used to obtain information associated with it. Below is an example implementation of an X509KeyManager that uses the alias for a certificate to get it's certificate chain and private key. This can then be used to initialise an SSL context, before setting a URL connection to use the SSL context to allow it to support client authentication, as shown below.
 {% gist kbremner/6206d58ff0b9545de603 X509Impl.java %}
 
 {% include section_header.html name="References" %}
