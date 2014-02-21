@@ -15,6 +15,10 @@ Recently I have been developing an application that had to support client authen
 {% include section_header.html name="System Keystore" %}
 Traditionally, Android applications created their own keystores for storing sensitive credentials. ICS, however, brought in the ability for applications to access credentials stored in a system keystore when authorised by a user. This not only simplifies the process, but with some devices supporting hardware-backed keystores, it can also be more secure than an application keystore stored in the filesystem.
 
+<div class="alert alert-info">
+If credentials using a particular algorithm are stored using a hardware feature, such as a secure element or Trusted Execution Environment (TEE), they are effectively "bound" to that particular device once installed and so protected against extraction. To determine if an algorithm is hardware-backed, the method [KeyChain.isBoundKeyAlgorithm(String)](https://developer.android.com/reference/android/security/KeyChain.html#isBoundKeyAlgorithm(java.lang.String)) can be used.
+</div>
+
 {% include section_header.html name="Getting an Alias" %}
 Before an application can use credentials stored in the system keystore, the user needs to give the application access to them. The KeyChain API provides a simple means of doing this:
 {% gist kbremner/6206d58ff0b9545de603 getAlias.java %}
