@@ -17,7 +17,7 @@ Traditionally, Android applications created their own keystores for storing sens
 
 <div class="alert alert-info">
 <p>
-If credentials using a particular algorithm are stored using a hardware feature, such as a secure element or Trusted Execution Environment (TEE), they are effectively "bound" to that particular device once installed and so protected against extraction. To determine if an algorithm is hardware-backed, the method <a href="https://developer.android.com/reference/android/security/KeyChain.html#isBoundKeyAlgorithm(java.lang.String)">KeyChain.isBoundKeyAlgorithm(String)</a> can be used.
+If credentials using a particular algorithm are stored using a hardware feature, such as a secure element or Trusted Execution Environment (TEE), they are effectively "bound" to that particular device once installed and so protected against extraction. To determine if an algorithm is hardware-backed, the method <a href="https://developer.android.com/reference/android/security/KeyChain.html#isBoundKeyAlgorithm(java.lang.String)" target="_blank">KeyChain.isBoundKeyAlgorithm(String)</a> can be used.
 </p>
 </div>
 
