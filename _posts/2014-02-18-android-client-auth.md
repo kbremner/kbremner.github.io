@@ -16,7 +16,9 @@ Recently I have been developing an application that had to support client authen
 Traditionally, Android applications created their own keystores for storing sensitive credentials. ICS, however, brought in the ability for applications to access credentials stored in a system keystore when authorised by a user. This not only simplifies the process, but with some devices supporting hardware-backed keystores, it can also be more secure than an application keystore stored in the filesystem.
 
 <div class="alert alert-info">
-If credentials using a particular algorithm are stored using a hardware feature, such as a secure element or Trusted Execution Environment (TEE), they are effectively "bound" to that particular device once installed and so protected against extraction. To determine if an algorithm is hardware-backed, the method [KeyChain.isBoundKeyAlgorithm(String)](https://developer.android.com/reference/android/security/KeyChain.html#isBoundKeyAlgorithm(java.lang.String)) can be used.
+<p>
+If credentials using a particular algorithm are stored using a hardware feature, such as a secure element or Trusted Execution Environment (TEE), they are effectively "bound" to that particular device once installed and so protected against extraction. To determine if an algorithm is hardware-backed, the method <a href="https://developer.android.com/reference/android/security/KeyChain.html#isBoundKeyAlgorithm(java.lang.String)">KeyChain.isBoundKeyAlgorithm(String)</a> can be used.
+</p>
 </div>
 
 {% include section_header.html name="Getting an Alias" %}
@@ -25,7 +27,9 @@ Before an application can use credentials stored in the system keystore, the use
 The user will be shown a dialog where they can select a certificate currently stored in the system keystore, or install a new certificate. When the user selects a certificate and closes the dialog, the callback will be given an alias for the selected certificate that it can use to access it. If the user cancels the dialog, the callback will be given a null alias.
 
 <div class="alert alert-warning">
+<p>
 It is important to note that although the KeyChain API allows an application to provide hints as to which certificate the user should choose, it cannot force the user to select a particular certificate
+</p>
 </div>
 
 {% include section_header.html name="Using an Alias" %}
