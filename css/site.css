@@ -86,4 +86,14 @@ a:hover {
   	background-color: #DEE;
 }
   
+.about-section {
+	background-color: #EFF;
+}
 
+.about-section-title {
+	margin:30px;
+}
+
+.about-section-content {
+	margin:30px;
+}
