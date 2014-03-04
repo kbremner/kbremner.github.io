@@ -90,10 +90,12 @@ a:hover {
 	background-color: #EFF;
 }
 
-.about-section-title {
-	margin:30px;
+.about-section.h1 {
+  	margin: 30px;
+	font-size: 63px;	
 }
 
-.about-section-content {
-	margin:30px;
+.about-section.p {
+  	margin: 30px;
+	font-size: 21px;
 }
