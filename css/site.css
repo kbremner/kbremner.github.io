@@ -87,15 +87,16 @@ a:hover {
 }
   
 .about-section {
+  	padding: 30px;
 	background-color: #EFF;
 }
 
 .about-section h1 {
-  	margin: 30px;
+  	margin: 10px;
 	font-size: 63px;	
 }
 
 .about-section p {
-  	margin: 30px;
+  	margin: 10px;
 	font-size: 21px;
 }
