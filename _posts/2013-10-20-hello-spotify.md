@@ -60,7 +60,7 @@ Here, we see that the native keyword has been used to tell the compiler that the
 
 The JNIEXPORT and JNICALL allow the method to be called from a Java class. The method naming convention allows the compiler to link the native method to the method in the class that it relates to. The JNIEnv and jobject parameters can be used by the method to more easily interact with the Java code. Finally, as the method returns a String, the return type is a jstring (the JNIEnv provides methods for converting between char*'s and jstrings).
 
-It is best not to try and write the C header yourself. The Java tool javah can create the appropriate C header file by pointing it to a compiled Java class that makes references to native methods. It will take care of all the parameter and return type conversion, as well as the naming convension.
+It is best not to try and write the C header yourself. The Java tool javah can create the appropriate C header file by pointing it to a compiled Java class that makes references to native methods. It will take care of all the parameter and return type conversion, as well as the naming convention.
 
 There is an alternative, which is to use JNI_OnLoad to register the native methods, but that's beyond the scope of this article. For more details about this approach, see [here](http://sbcgamesdev.blogspot.co.uk/2012/12/using-jnionload-in-adroid-ndk.html).
 

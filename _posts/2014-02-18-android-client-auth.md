@@ -10,10 +10,10 @@ tags: "android client-authentication"
 published: true
 ---
 
-Recently I have been developing an application that had to support client authentication using certificates. The process wasn't quite as well documented as I would have expected, so this post aims to help others that need to support client authenication in their application (aimed at Ice Cream Sandwich (ICS) and above).
+Recently I have been developing an application that had to support client authentication using certificates. The process wasn't quite as well documented as I would have expected, so this post aims to help others that need to support client authentication in their application (aimed at Ice Cream Sandwich (ICS) and above).
 
 {% include section_header.html name="System Keystore" %}
-Traditionally, Android applications created their own keystores for storing sensitive credentials. ICS, however, brought in the ability for applications to access credentials stored in a system keystore when authorised by a user. This not only simplifies the process, but with some devices supporting hardware-backed keystores, it can also be more secure than an application keystore stored in the filesystem.
+Traditionally, Android applications created their own keystores for storing sensitive credentials. ICS, however, brought in the ability for applications to access credentials stored in a system keystore when authorised by a user. This not only simplifies the process, but with some devices supporting hardware-backed keystores, it can also be more secure than an application keystore stored in the file system.
 
 <div class="alert alert-info">
 <p>
