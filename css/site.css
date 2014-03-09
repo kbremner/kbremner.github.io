@@ -11,11 +11,11 @@ a:hover {
 }
 
 .post-link {
-  color: #CDD;
+  color: white;
 }
 
 .post-link:hover {
-  color: #EEE;  
+  color: #BBB;  
 }
 
 .index-body {
@@ -30,11 +30,6 @@ a:hover {
 	padding-right: 1em;
 	padding-left: 1em;
 }
-
-.gist {
-    font-size: 0.85em;
-}
-
 
 .social {
 	padding-right: 1em;
@@ -52,22 +47,16 @@ a:hover {
 	position: fixed;
 }
 
-.jumbotron {
-  	background-color: #EFF;
-  	border-radius: 5px;
-}
-
 .anchor-header {
 	padding-top: 55px;
   	margin-top: -55px;
 }
 
-.welcome-section {
-	padding-right: 1em;
-	padding-left: 1em;
-	background-color: #EFF;
-	border-radius: 5px;  
-}
+/*.jumbotron {
+  background-color: white;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.15),0 1px 5px rgba(0,0,0,0.075);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.15),0 1px 5px rgba(0,0,0,0.075);
+}*/
 
 .build-info-tag {
 	height:18px;
@@ -78,19 +67,57 @@ a:hover {
 	box-shadow: inset 0 1px 0 rgba(255,255,255,0.15),0 1px 5px rgba(0,0,0,0.075);
 }
 
-.project-title .panel-body {
-	background-color: #EFF;
-}
-
 .project-title .panel-footer {
-  	background-color: #DEE;
+  background-color: #DEE;
 }
   
 .about-section {
-  	padding: 30px;
-	background-color: #EFF;
+  padding: 30px;
 }
 
-.about-section p {
-	font-size: 21px;
+@font-face{
+  font-family: Cabin;
+  src: url(/fonts/cabin/Cabin-Regular.otf);
+}
+
+@font-face{
+  font-family: Cabin;
+  src: url(/fonts/cabin/Cabin-Bold.otf);
+  font-weight: bold;
+}
+
+@font-face{
+  font-family: Cabin;
+  src: url(/fonts/cabin/Cabin-Italic.otf);
+  font-style: italic;
+}
+
+@font-face{
+  font-family: Cabin;
+  src: url(/fonts/cabin/Cabin-BoldItalic.otf);
+  font-style: italic;
+  font-weight: bold;
+}
+
+
+@font-face{
+  font-family: AbeeZee;
+  src: url(/fonts/abeezee/AbeeZee-Regular.otf);
+}
+
+@font-face{
+  font-family: AbeeZee;
+  src: url(/fonts/abeezee/AbeeZee-Italic.otf);
+  font-style: italic;
+}
+
+div,p {
+  font-family: Cabin;
+  font-size: 18px;
+  line-height: 140%;
+}
+
+.gist div {
+	font-family: Consolas, "Liberation Mono", Courier, monospace;
+	font-size: 12px;
 }
