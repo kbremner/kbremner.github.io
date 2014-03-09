@@ -14,7 +14,7 @@ published: true
 
 Recently I got round to having a look at Spotify's developer library, [libspotify](https://developer.spotify.com/technologies/libspotify/), to try and figure out how to use it within Android apps. As part of this, I decided to create a "Hello Spotify" example project that might be useful to others looking to use the library.
 
-I have created a simple example library project that is available on GitHub here. It only provides a means of logging in, but shows how to use libspotify on Android. The pre-requisites for using it are:
+I have created a simple example library project that is available on GitHub [here](https://github.com/kbremner/Hello-Spotify). It only provides a means of logging in, but shows how to use libspotify on Android. The pre-requisites for using it are:
 
 * Android NDK installed (see [here](http://developer.android.com/tools/sdk/ndk/index.html))
 * Spotify premium account
