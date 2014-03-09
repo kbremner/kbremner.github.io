@@ -121,3 +121,7 @@ div,p {
 	font-family: Consolas, "Liberation Mono", Courier, monospace;
 	font-size: 12px;
 }
+
+.img_link {
+  padding-bottom: 10px;
+}
