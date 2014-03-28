@@ -111,6 +111,32 @@ a:hover {
   font-style: italic;
 }
 
+
+@font-face{
+  font-family: Roboto;
+  src: url(/fonts/roboto/RobotoCondensed-Regular.ttf);
+}
+
+@font-face{
+  font-family: Roboto;
+  src: url(/fonts/roboto/RobotoCondensed-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face{
+  font-family: Roboto;
+  src: url(/fonts/roboto/RobotoCondensed-Italic.ttf);
+  font-style: italic;
+}
+
+@font-face{
+  font-family: Roboto;
+  src: url(/fonts/roboto/RobotoCondensed-BoldItalic.ttf);
+  font-style: italic;
+  font-weight: bold;
+}
+
+
 div,p {
   font-family: Cabin;
   font-size: 18px;
