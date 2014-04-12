@@ -13,8 +13,7 @@ published: true
 <script type="text/javascript">
   function iframeLoaded(iframe) {
             iframe.height = "";
-            iframe.height = iframe.contentWindow.document.body.scrollHeight + "px";
-      }   
+            iframe.height = iframe.contentWindow.document.body.scrollHeight + "px";  
   }
 </script> 
 <iframe id="reposFrame" src="http://ghactivity.com/kbremner/repos" frameborder="0" width="100%" onload="iframeLoaded(this)"></iframe>
