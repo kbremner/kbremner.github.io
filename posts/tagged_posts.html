@@ -1,0 +1,25 @@
+---
+layout: default
+published: true
+---
+
+<script type="text/javascript">
+  function getUrlValue(VarSearch){
+    var SearchString = window.location.search.substring(1);
+    var VariableArray = SearchString.split('&');
+    for(var i = 0; i < VariableArray.length; i++){
+      var KeyValuePair = VariableArray[i].split('=');
+      if(KeyValuePair[0] == VarSearch){
+        return KeyValuePair[1];
+      }
+    }
+  }
+  
+  var tag = getUrlValue("tag");
+  
+  $(function() {
+    document.title = tag + " Posts - Kyle Bremner | Software Engineer";
+  });
+</script>
+
+Under construction.
