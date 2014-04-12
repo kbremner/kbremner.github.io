@@ -1,5 +1,6 @@
 ---
 layout: posts
+title = "Posts - Kyle Bremner | Software Engineer"
 published: true
 ---
 
@@ -18,12 +19,16 @@ published: true
   
   // get the tag URL parameter
   var tag = getUrlValue("tag");
-  
+
+    
   // When the page has loaded, need to update title and hide unrelated posts
   $(function() {
-    // Update the title of the page
-    document.title = tag + " Posts - Kyle Bremner | Software Engineer";
-    // Select all the posts that don't have the tag and hide them
-    $("div.panel-footer:not(:contains('" + tag + "'))").parent().hide();
+    // Update the tag to the page title
+    document.title = tag + document.title;
+    // Hide all the posts that don't have the tag
+    $("div.panel[data-tags$='" + tag + "'],"+ // Ends with the tag
+      "div.panel[data-tags^='" + tag + ",'],"+ // Starts with the tag
+      "div.panel[data-tags*='," + tag + ",']") // contains the tag
+        .hide();
   });
 </script>
