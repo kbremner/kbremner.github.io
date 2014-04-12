@@ -1,9 +1,10 @@
 ---
-layout: default
+layout: posts
 published: true
 ---
 
 <script type="text/javascript">
+  // Simple function to get a url parameter
   function getUrlValue(VarSearch){
     var SearchString = window.location.search.substring(1);
     var VariableArray = SearchString.split('&');
@@ -15,11 +16,14 @@ published: true
     }
   }
   
+  // get the tag URL parameter
   var tag = getUrlValue("tag");
   
+  // When the page has loaded, need to update title and hide unrelated posts
   $(function() {
+    // Update the title of the page
     document.title = tag + " Posts - Kyle Bremner | Software Engineer";
+    // Select all the posts that don't have the tag and hide them
+    $("div.panel-footer:not(:contains('" + tag + "'))").parent().hide();
   });
 </script>
-
-Under construction.
