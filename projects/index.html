@@ -15,12 +15,13 @@ published: true
 <link rel="stylesheet" type="text/css" href="/css/github-timeline-widget.min.css">
 <script type="text/javascript" src="/js/github-timeline-widget.min.js"></script>
 <script type="text/javascript">
- $(GitHubTimeline({
-    username: 'kbremner',
-    limit: 20,
-    header: 'octocat',
-    id: 'github-timeline-widget',
-    exclude: ['gist'],
-    callback: function () { //code to run once widget is inserted into DOM }
-  }));
+  $(function() { GitHubTimeline({
+      username: 'kbremner',
+      limit: 20,
+      header: 'octocat',
+      id: 'github-timeline-widget',
+      exclude: ['gist'],
+      callback: function () { //code to run once widget is inserted into DOM }
+    });
+  });
 </script>
