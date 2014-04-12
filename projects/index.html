@@ -10,3 +10,16 @@ published: true
 <li class="list-group-item"><a href="smart_ticket_checker.html">Smart Ticket Checker</a></li>
 </ul>
 <p>I like to keep my projects open source and use GitHub to host most of them. Below is a list of the projects I have on GitHub and my recent activity.</p>
+<div id="github-timeline-widget"></div>
+
+<script type="text/javascript" src="github-timeline-widget.min.js"></script>
+<script type="text/javascript">
+ $(GitHubTimeline({
+    username: 'kbremner',
+    limit: 20,
+    header: 'octocat',
+    id: 'github-timeline-widget',
+    exclude: ['gist'],
+    callback: function () { //code to run once widget is inserted into DOM }
+  }));
+</script>
