@@ -1,5 +1,6 @@
 {% case num %}
-{% when 11 or 12 or 13 %}{{ include.num }}th
+num
+{% when '11' or '12' or '13' %}{{ include.num }}th
 {% else %}
 {% capture mod %}{{ include.num | modulo:10 }}{% endcapture %}
 {% case mod %}
