@@ -24,7 +24,7 @@ published: true
   // When the page has loaded, need to update title and hide unrelated posts
   $(function() {
     // Update the tag to the page title
-    document.title = tag + document.title;
+    document.title = tag + " Posts - Kyle Bremner | Software Engineer";
     // Hide all the posts that don't have the tag
     $("div.panel[data-tags$='" + tag + "'],"+ // Ends with the tag
       "div.panel[data-tags^='" + tag + ",'],"+ // Starts with the tag
