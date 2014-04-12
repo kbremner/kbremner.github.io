@@ -1,11 +1,11 @@
 {% case include.num %}
-{% when '11' or '12' or '13' %}{{ include.num }}th
-{% else %}
-{% capture mod %}{{ include.num | modulo:10 }}{% endcapture %}
-{% case mod %}
-{% when '1' %}{{ include.num }}st
-{% when '2' %}{{ include.num }}nd
-{% when '3' %}{{ include.num }}rd
-{% else %}{{ include.num }}th
-{% endcase %}
+	{% when '11' or '12' or '13' %}{{ include.num }}th
+	{% else %}
+		{% capture mod %}{{ include.num | modulo:10 }}{% endcapture %}
+		{% case mod %}
+			{% when '1' %}{{ include.num }}st
+			{% when '2' %}{{ include.num }}nd
+			{% when '3' %}{{ include.num }}rd
+			{% else %}{{ include.num }}th
+		{% endcase %}
 {% endcase %}
