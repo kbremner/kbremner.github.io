@@ -12,8 +12,9 @@ published: true
 <p>I like to keep my projects open source and use GitHub to host most of them. Below is a list of the projects I have on GitHub and my recent activity.</p>
 <script type="text/javascript">
   function iframeLoaded(iframe) {
-            iframe.height = "";
-            iframe.height = iframe.contentWindow.document.body.scrollHeight + "px";  
+    iframe = document.getElementById(iframe.id);
+   	iframe.height = "";
+    iframe.height = iframe.contentWindow.document.body.scrollHeight + "px";  
   }
 </script> 
 <iframe id="reposFrame" src="http://ghactivity.com/kbremner/repos" frameborder="0" width="100%" onload="iframeLoaded(this)"></iframe>
