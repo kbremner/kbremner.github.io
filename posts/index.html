@@ -39,7 +39,11 @@ published: true
 <div class="panel-heading"><a class="post-link" href="{{ post.url }}">{{ post.title }}</a> - <small>{% include format_date.html time=post.date %}</small></div>
 <div class="panel-body"><em>{{ post.excerpt }}</em></div>
 {% if post.tags.size > 0 %}
-<div class="panel-footer" >{{ post.tags | prepend: 'test' | array_to_sentence_string }}</div>
+<div class="panel-footer" >
+  {% for curTag in post.tags %}
+  <a href="?api={{ curTag }}">{{ curTag }}</a>{% if not forloop.last %}, {% endif %}
+  {% endfor %}
+</div>
 {% endif %}
 </div>
 {% endfor %}
