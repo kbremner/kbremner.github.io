@@ -1,10 +1,11 @@
 
-# Reveal.js and Yeoman is Awesomeness
+# Project Overview
+## Enablers SDK
 
-From the terminal, pop in:
-
-  ```yo reveal:slide "Slide Title"```
-
-Available options:
-
- ```--markdown --attributes --notes```
+<aside class="notes">
+Talking about:
+<ul>
+	<li>Project recently done at ecebs</li>
+	<li>Creating an SDK to make it as easy as possible for terminal developers to create ITSO-compliant terminals (including us)</li>
+</ul>
+</aside>

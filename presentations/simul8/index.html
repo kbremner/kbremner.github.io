@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
 
-        <title>Reveal.js and Yeoman is Awesomeness</title>
+        <title>Simul8 Presentation</title>
 
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -19,9 +19,15 @@
         <!-- For syntax highlighting -->
         <link rel="stylesheet" href="bower_components/reveal.js/lib/css/zenburn.css" id="highlight-theme">
 
-        <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+        <!-- If the query includes 'print-pdf', include the PDF print sheet -->
         <script>
-          document.write( '<link rel="stylesheet" href="bower_components/reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+            if( window.location.search.match( /print-pdf/gi ) ) {
+                var link = document.createElement( 'link' );
+                link.rel = 'stylesheet';
+                link.type = 'text/css';
+                link.href = 'bower_components/reveal.js/css/print/pdf.css';
+                document.getElementsByTagName( 'head' )[0].appendChild( link );
+            }
         </script>
 
         <!--[if lt IE 9]>
@@ -46,7 +52,39 @@
                 
                     
                         
-    <section data-html="slides/slide-title.html"></section>
+    <section data-markdown="slides/outline.md"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="slides/problem.md"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="slides/solution.md"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="slides/project-aims.md"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="slides/spec.md"></section>
 
 
                     
@@ -69,7 +107,7 @@
                 center: true,
 
                 theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-                transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+                transition: 'linear', // default/cube/page/concave/zoom/linear/fade/none
 
                 // Optional libraries used to extend on reveal.js
                 dependencies: [
