@@ -1,6 +1,5 @@
-
-# Project Overview
-## Enablers SDK
+# Enablers SDK
+## Project Overview
 
 <aside class="notes">
 Talking about:
@@ -8,4 +7,6 @@ Talking about:
 	<li>Project recently done at ecebs</li>
 	<li>Creating an SDK to make it as easy as possible for terminal developers to create ITSO-compliant terminals (including us)</li>
 </ul>
+<br>
+TODO: say what's going to be covered....
 </aside>

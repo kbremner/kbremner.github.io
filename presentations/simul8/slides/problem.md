@@ -1,14 +1,13 @@
 ## Problem
-* ITSO specifications are heavy...
-	* Difficult for terminal developers
-		* Certification
-* RTD = no certification
-	* Still need to understand how to detect cards
-	* Need to understand RTD interfaces
+RTDS = no certification, but other challenges&#8230;
+
+* Detecting cards
+* RTDS interfaces
 
 <aside class="notes" data-markdown>
 <ul>
-	<li>Possible to corrupt a card if not done correctly</li>
-	<li>Need to make using RTD (and ITSO in general) as simple as possible to drive RTD adoption</li>
+	<li>Still need to detect cards and parse it's contents. Several hundred pages of ITSO specification related to that</li>
+	<li>Need to understand how to interact with RTDS. Doing this incorrectly could corrupt the contents of the card or cause other issues</li>
+	<li>Need to make using RTD (and ITSO in general) as simple as possible to encourage terminal developers to create devices for use in ITSO schemes</li>
 </ul>
 </aside>
