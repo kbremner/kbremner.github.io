@@ -26,9 +26,9 @@ published: true
     // Update the tag to the page title
     document.title = tag + " Posts - Kyle Bremner | Software Engineer";
     // Hide all the posts that don't have the tag
-    $("div.panel[data-tags$='" + tag + "'],"+ // Ends with the tag
-      "div.panel[data-tags^='" + tag + ",'],"+ // Starts with the tag
-      "div.panel[data-tags*='," + tag + ",']") // contains the tag
+    $("div.panel:not([data-tags$='" + tag + "'],"+ // Ends with the tag
+      "[data-tags^='" + tag + ",'],"+ // Starts with the tag
+      "[data-tags*='," + tag + ",'])") // contains the tag
         .hide();
   });
 </script>
