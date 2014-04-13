@@ -4,7 +4,7 @@ title: "Viewtils - Kyle Bremner | Software Engineer"
 published: true
 name: Viewtils
 link: https://github.com/kbremner/Viewtils
-tagline: "Help to seach an Andriod application's UI"
+tagline: "Help to search an Andriod application's UI"
 travis: https://travis-ci.org/kbremner/Viewtils
 coveralls: https://coveralls.io/r/kbremner/Viewtils?branch=master
 coveralls-badge: https://coveralls.io/repos/kbremner/Viewtils/badge.png?branch=master
