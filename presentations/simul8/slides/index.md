@@ -2,11 +2,5 @@
 ## Project Overview
 
 <aside class="notes">
-Talking about:
-<ul>
-	<li>Project recently done at ecebs</li>
-	<li>Creating an SDK to make it as easy as possible for terminal developers to create ITSO-compliant terminals (including us)</li>
-</ul>
-<br>
-TODO: say what's going to be covered....
+Going to talk about project recently a part of, developing an SDK to make it as simple as possible to interact with smartcards
 </aside>

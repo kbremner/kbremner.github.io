@@ -1,10 +1,12 @@
 ## Approach
-* Waterfall (with feedback)
-* Define language-independant specification
-* Implement spec in Java and C#
-* Data-driven testing
-* Internal & external release
-	* Feedback
+Waterfall (with feedback)
+
+* Requirements Capture/Design
+* Implementation
+* Testing
+* Release
+
+
 
 <aside class="notes">
 <ul>
@@ -13,4 +15,9 @@
 	<li>Implement in Java and C#. I was responsible for the Java implementation</li>
 	<li>Language-independant spec, so we wanted testing to be language-independant.</li>
 </ul>
+* Define language-independant specification
+* Implement spec in Java and C#
+* Data-driven testing
+* Internal & external release
+	* Feedback
 </aside>

@@ -1,7 +1,8 @@
 ## Specification
 * Working group formed
-* Defined required methods
-* Defined error scenarios
+* Defined:
+	* Methods (parameters, outcome)
+	* Error scenarios
 
 <aside class="notes">
 <ul>
