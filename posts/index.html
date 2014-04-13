@@ -41,7 +41,7 @@ published: true
 {% if post.tags.size > 0 %}
 <div class="panel-footer" >
   {% for curTag in post.tags %}
-  <a href="?api={{ curTag }}">{{ curTag }}</a>{% if !forloop.last %}, {% endif %}
+  <a href="?api={{ curTag }}">{{ curTag }}</a>{% if forloop.last != true %}, {% endif %}
   {% endfor %}
 </div>
 {% endif %}
