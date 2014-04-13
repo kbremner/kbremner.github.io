@@ -1,5 +1,43 @@
 ---
-layout: posts
+layout: default
 title: "Posts - Kyle Bremner | Software Engineer"
 published: true
 ---
+<script type="text/javascript">
+  // Simple function to get a url parameter
+  function getUrlValue(varSearch){
+    var searchString = window.location.search.substring(1);
+    var variableArray = searchString.split('&');
+    for(var i = 0; i < variableArray.length; i++){
+      var keyValuePair = variableArray[i].split('=');
+      if(keyValuePair[0] == varSearch){
+        return keyValuePair[1];
+      }
+    }
+  }
+  
+  // get the tag URL parameter
+  var tag = getUrlValue("tag");
+
+    
+  // When the page has loaded, need to update title and hide unrelated posts
+  $(function() {
+    // Add the tag to the page title
+    document.title = tag + " " + document.title;
+    // Hide all the posts that don't have the tag
+    $("div.panel:not([data-tags$='" + tag + "'],"+ // Ends with the tag
+      "[data-tags^='" + tag + ",'],"+ // Starts with the tag
+      "[data-tags*='," + tag + ",'])") // contains the tag
+        .hide();
+  });
+</script>
+
+{% for post in site.posts %}
+<div class="panel panel-info" data-tags="{{ post.tags | join: ',' }}">
+<div class="panel-heading"><a class="post-link" href="{{ post.url }}">{{ post.title }}</a> - <small>{% include format_date.html time=post.date %}</small></div>
+<div class="panel-body"><em>{{ post.excerpt }}</em></div>
+{% if post.tags.size > 0 %}
+<div class="panel-footer" >{{ post.tags | array_to_sentence_string }}</div>
+{% endif %}
+</div>
+{% endfor %}
