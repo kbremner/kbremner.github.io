@@ -33,7 +33,7 @@ It is important to note that although the KeyChain API allows an application to 
 </div>
 
 {% include section_header.html name="Using an Alias" %}
-Once an application has an alias for a certificate, it can be used to obtain information associated with it. Below is an example implementation of an X509KeyManager that uses the alias for a certificate to get it's certificate chain and private key. This can then be used to initialise an SSL context, before setting a URL connection to use the SSL context to allow it to support client authentication, as shown below.
+Once an application has an alias for a certificate, it can be used to obtain information associated with it. Below is an example implementation of an X509KeyManager that uses the alias for a certificate to get it's certificate chain and private key. This can then be used to initialise an SSL context, before setting a URL connection to use the SSL context to allow it to support client authentication, as shown below. Note that the X509Impl instance should be cached instead of being created for each connection, as getting the certificate chain and private key can be slow.
 {% gist kbremner/6206d58ff0b9545de603 X509Impl.java %}
 
 {% include section_header.html name="References" %}
