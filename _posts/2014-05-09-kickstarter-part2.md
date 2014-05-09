@@ -3,13 +3,11 @@ layout: post
 title: Scraping Kickstarter - Part 2
 tags: android java kickstarter scraping api
 sections:
-  - Introduction
   - API Issues
   - Wrap Up
 published: true
 ---
 
-{% include section_header.html name="Introduction" %}
 After writing my [first post]({% post_url 2014-03-15-kickstarter-part1 %}) looking at scraping Kickstarter, I started looking in to writing a library for obtaining information from the site and an application that used it. All was going well, until I hit upon one of the biggest issue with relying on private APIs - they can change at a second's notice.
 
 {% include section_header.html name="API Issues" %}
