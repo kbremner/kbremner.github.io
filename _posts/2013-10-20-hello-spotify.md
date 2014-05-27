@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hello Spotify
+title: Hello Spotify - Kyle Bremner | Software Engineer
 sections: 
   - Setting Up
   - JNI Example
