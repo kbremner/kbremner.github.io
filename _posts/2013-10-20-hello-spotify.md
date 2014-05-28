@@ -63,7 +63,7 @@ The JNIEXPORT and JNICALL allow the method to be called from a Java class. The m
 
 It is best not to try and write the C header yourself. The Java tool javah can create the appropriate C header file by pointing it to a compiled Java class that makes references to native methods. It will take care of all the parameter and return type conversion, as well as the naming convention.
 
-There is an alternative, which is to use JNI_OnLoad to register the native methods, but that's beyond the scope of this article. For more details about this approach, see [here](http://sbcgamesdev.blogspot.co.uk/2012/12/using-jnionload-in-adroid-ndk.html).
+There is an alternative, which is to use JNI\_OnLoad to register the native methods, but that's beyond the scope of this article. For more details about this approach, see [here](http://sbcgamesdev.blogspot.co.uk/2012/12/using-jnionload-in-adroid-ndk.html).
 
 {% include section_header.html name="C Code" %}
 ####Writing it
@@ -81,24 +81,24 @@ As for headers, we have:
 
 The callback methods mainly just log using the Android logging methods. The only one that is a bit different is the __logged\_in__ callback, that takes some of the logic from one of the libspotify examples to log some details about the logged in user.
 
-The interesting stuff here is in hello_spotify.c. First, lets look at the method for getting the build ID:
+The interesting stuff here is in hello\_spotify.c. First, lets look at the method for getting the build ID:
 
 {% gist 7068897 %}
 
 Here, we see the use of the JNIEnv to convert a char* returned by the libspotify method sp\_build\_id() in to a jstring that can be returned by the method in the Java class.
 
-Now we've seen a simple method, we can move on to the more complicated log in method. To log in, we first need to create a session. To create a session, we need to provide a sp\_session\_config struct filled with config values. These include the location to be used as cache, the app key, the callbacks, etc. Once that has been filled, the session can be created by calling sp_session_create, passing it the config settings and a double pointer that it can set to point to an allocated session.
+Now we've seen a simple method, we can move on to the more complicated log in method. To log in, we first need to create a session. To create a session, we need to provide a sp\_session\_config struct filled with config values. These include the location to be used as cache, the app key, the callbacks, etc. Once that has been filled, the session can be created by calling sp\_session\_create, passing it the config settings and a double pointer that it can set to point to an allocated session.
 
 Once the session is created, we can login with the provided username and password. If this was successful, we can then create a background thread for calling sp\_session\_process\_events.
 
-This background thread is important, as libspotify has many internal threads that are synchronized by pushing tasks that are executed when the sp_session_process_events method is called by an application thread. It relies on this thread listening for calls to the notify_main_thread callback, as that is libspotify saying that there are events to be processed. Additionally, the application needs to make sure that no other libspotify methods are called while sp_session_process_events is executing. As this process can get difficult to manage, I thought it was best to leave it out of this simple example. The psyonspotify example in the references shows one of it doing it.
+This background thread is important, as libspotify has many internal threads that are synchronized by pushing tasks that are executed when the sp\_session\_process\_events method is called by an application thread. It relies on this thread listening for calls to the notify\_main\_thread callback, as that is libspotify saying that there are events to be processed. Additionally, the application needs to make sure that no other libspotify methods are called while sp\_session\_process\_events is executing. As this process can get difficult to manage, I thought it was best to leave it out of this simple example. The psyonspotify example in the references shows one of it doing it.
 
 ####Problems with Login Code
 
 Note that the approach for the login method is naive in a number of ways:
 
 * from the libspotify documentation here, it states that it is not supported to have multiple active sessions, and it's recommended to only call this [sp\_create\_session] once per process. It would be better to have an init method that creates a session that can be used later for operations like logging in a user. This is why if you attempted to call login a few times your app will eventually crash.
-* The main\_loop thread doesn't respect the timeout or the notify_main_thread callback.
+* The main\_loop thread doesn't respect the timeout or the notify\_main\_thread callback.
 * The "blob" that can be used for remembering users isn't handled.
 
 ####Building it
