@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Scraping Kickstarter - Part 2 - Kyle Bremner | Software Engineer
-post_title: Scraping Kickstarter - Part 2
+item_title: Scraping Kickstarter - Part 2
 tags: android java kickstarter scraping api
 sections:
   - API Issues

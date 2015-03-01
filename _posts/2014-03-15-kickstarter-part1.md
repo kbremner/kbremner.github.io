@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Scraping Kickstarter - Part 1 - Kyle Bremner | Software Engineer
-post_title: Scraping Kickstarter - Part 1
+item_title: Scraping Kickstarter - Part 1
 sections: 
   - Getting Projects
   - Searching

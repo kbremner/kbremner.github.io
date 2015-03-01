@@ -16,10 +16,9 @@
         <!-- Custom CSS -->
         <link rel="stylesheet" href="/css/site.css">
 
-
-
         <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
         <script src="/js/stickysidebar.min.js"></script>
+        <script src="/js/utils.js"></script>
   </head>
 
         <!-- Google analytics stuff -->
@@ -48,11 +47,11 @@
 
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="/about">About</a></li>
             <li><a href="/posts">Posts</a></li>
             <li><a href="/projects">Projects</a></li>
           </ul>
           <p class="nav navbar-text navbar-right social">
+            {% include twitter.html %}
             {% include linkedin.html %}
             {% include github.html %}
           </p>

@@ -18,6 +18,10 @@ a:hover {
 	background-color: rgba(217, 217, 220, 0.4);
 }
 
+.well {
+    background-image: inherit;
+}
+
 .footer {
 	padding-right: 1em;
 	padding-left: 1em;
@@ -143,3 +147,5 @@ div,p {
 .img_link {
   padding-bottom: 10px;
 }
+
+iframe[id^='twitter-widget-']{ width:100% !important;}

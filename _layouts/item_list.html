@@ -1,0 +1,16 @@
+---
+layout: default
+published: true
+---
+<script type="text/javascript">
+$(function() {
+    var tag = getQueryVariable("tag");
+
+    if(tag !== undefined) {
+        // Add the tag to the page title and filter out unrelated posts
+        document.title = tag + " " + document.title;
+        filterByTag(tag);
+    }
+});
+</script>
+{{ content }}

@@ -1,28 +1,11 @@
 ---
-layout: default
+layout: item_list
 title: "Projects - Kyle Bremner | Software Engineer"
 published: true
 ---
 
-<link rel="stylesheet" type="text/css" href="/css/github-timeline-widget.min.css">
-<script type="text/javascript" src="/js/github-timeline-widget.min.js"></script>
-<script type="text/javascript">
-  $(function() {
-    GitHubTimeline({
-      username: 'kbremner',
-      limit: 15,
-      header: false,
-      id: 'github-timeline-widget',
-      exclude: ['gist', 'kbremner.github.io']
-    });
-  });
-</script>
-<p>With the technologies used by software developers changing so rapidly, it is important to keep up to date with what's going on. I try to experiment with libraries and tools, new and old, where I can. Below are links to details about some of the work and personal projects I have completed.</p>
-<ul class="list-group">
-<li class="list-group-item"><a href="Viewtils.html">Viewtils</a></li>
-<li class="list-group-item"><a href="smart_ticket_checker.html">Smart Ticket Checker</a></li>
-</ul>
-<div class="panel panel-info">
-  <div class="panel-heading"><a href="https://github.com/kbremner?tab=activity" target="_blank">Recent GitHub Activity</a></div>
-  <div id="github-timeline-widget" class="panel-body"></div>
-</div>
+{% for page in site.pages %}
+    {% if page.project %}
+        {% include list_item.html item=page %}
+    {% endif %}
+{% endfor %}
