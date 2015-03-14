@@ -25,6 +25,7 @@ published: true
             <div class="post">{{ content }}</div>
             {% if page.tags.size > 0 %}
           		<p><b>Tags:</b> {{ page.tags | array_to_sentence_string }}</p>
+                <div class="share-button"></div>
           	{% endif %}
         </div>
         {% else %}
@@ -32,6 +33,7 @@ published: true
             <div class="post">{{ content }}</div>
             {% if page.tags.size > 0 %}
             	<p><b>Tags:</b> {{ page.tags | array_to_sentence_string }}</p>
+                <div class="share-button"></div>
             {% endif %}
         </div>
         {% endif %}

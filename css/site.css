@@ -148,4 +148,14 @@ div,p {
   padding-bottom: 10px;
 }
 
-iframe[id^='twitter-widget-']{ width:100% !important;}
+img {
+    max-width: 100%;
+}
+
+.share-button {
+    padding-bottom: 40px;
+}
+
+iframe[id^='twitter-widget-'] {
+    width:100% !important;
+}
