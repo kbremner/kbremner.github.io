@@ -7,5 +7,4 @@ Spend my days working on creating the 'google' of the energy supply chain, aggre
 
 I can often be found at [Tech Meetup](http://techmeetup.co.uk), [GlasgowJS](http://glasgowjs.com), or one of the many other tech events held in Glasgow or Edinburgh.
 
-{% include twitter.html %}
-{% include medium.html %}
+{% include media.html %}

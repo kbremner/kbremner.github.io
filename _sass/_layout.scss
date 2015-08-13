@@ -13,8 +13,20 @@
     }
 }
 
-.twitter iframe {
-  display: inline !important;
+.media-wrapper {
+  width: 100%;
+  >div {
+    width: 100%;
+  }
+
+  .twitter {
+    text-align: center;
+    padding-bottom: $spacing-unit;
+
+    iframe {
+      display: inline !important;
+    }
+  }
 }
 
 .site-title {
