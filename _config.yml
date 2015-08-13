@@ -1,4 +1,10 @@
-name: Kyle Bremner
+# Site settings
+title: Kyle Bremner | Software Engineer
 email: contact@kbremner.com
-cv: /files/Public_CV.pdf
-timezone: Europe/London
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://kbremner.github.io" # the base hostname & protocol for your site
+twitter_username: _kbremner
+github_username:  kbremner
+
+# Build settings
+markdown: kramdown
