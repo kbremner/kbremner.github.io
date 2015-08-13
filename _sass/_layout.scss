@@ -29,7 +29,12 @@
  */
 .site-footer {
     border-top: 1px solid $grey-color-light;
-    padding-top: $spacing-unit;
+    padding: $spacing-unit 0;
+    text-align: center;
+
+    a {
+      padding-left: $spacing-unit;
+    }
 }
 
 .contact-list,
